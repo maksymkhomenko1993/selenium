@@ -1,0 +1,266 @@
+{
+  "id": "2f4cf95a-5759-4a06-8713-dc30c7f813fd",
+  "version": "2.0",
+  "name": "Allo",
+  "url": "https://allo.ua/",
+  "tests": [{
+    "id": "c57bd3b0-9182-49e5-9004-bb184e3fa9af",
+    "name": "Redirect to home page by click on logo",
+    "commands": [{
+      "id": "97f8ef2a-c4fd-47bd-b2b4-24d81e8db0da",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2d0479b3-fcc1-44bb-b955-ac0baaf7be0e",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.mh__sr .v-logo__img",
+      "targets": [
+        ["css=.mh__sr .v-logo__img", "css:finder"],
+        ["xpath=//img[@alt='Интернет-Магазин Allo']", "xpath:img"],
+        ["xpath=//div[@id='__layout']/div/header/div/div[2]/a/img", "xpath:idRelative"],
+        ["xpath=//a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "06c4e97e-75b3-4816-a2e1-5038ddcb702f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.v-sli__item:nth-child(7) > a",
+      "targets": [
+        ["css=.v-sli__item:nth-child(7) > a", "css:finder"],
+        ["xpath=//div[@id='__layout']/div/div/div/div/div/div/div/div[7]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://allo.ua/ru/bonus-armor/')]", "xpath:href"],
+        ["xpath=//div[7]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "24b64092-e761-4337-986a-00bfaa594fda",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.main_description-text:nth-child(1)",
+      "targets": [
+        ["css=.main_description-text:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='__layout']/div/div/div[2]/div/div/div/div[2]/section/div/p", "xpath:idRelative"],
+        ["xpath=//section/div/p", "xpath:position"]
+      ],
+      "value": "Українські бізнеси та Благодійний Фонд Сергія Притули об’єднуються, щоб придбати медичний броньований транспорт для порятунку наших героїв."
+    }, {
+      "id": "2155f6da-1492-4466-9df2-0dee70722e9e",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//img[@alt='Интернет-Магазин Allo']",
+      "targets": [
+        ["css=.mh__sr .v-logo__img", "css:finder"],
+        ["xpath=//img[@alt='Интернет-Магазин Allo']", "xpath:img"],
+        ["xpath=//div[@id='__layout']/div/header/div/div[2]/a/img", "xpath:idRelative"],
+        ["xpath=//a/img", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "2078c89f-bfa7-4d51-9078-f64a711facf9",
+    "name": "Subscribe to news",
+    "commands": [{
+      "id": "6d50dd46-cc6f-49ff-8bc2-345c3b0f1a12",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a017b364-85b1-4740-ad62-530d57852b86",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.a-button",
+      "targets": [
+        ["css=.a-button", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='__layout']/div/div[2]/div/div/div/form/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Підписатися')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cfbf64a8-5e63-4331-b4dc-c2486ad840b5",
+      "comment": "",
+      "command": "click",
+      "target": "name=email",
+      "targets": [
+        ["id=T4myPq5hU11wJRPcSHEuC", "id"],
+        ["name=email", "name"],
+        ["css=#T4myPq5hU11wJRPcSHEuC", "css:finder"],
+        ["xpath=//input[@id='T4myPq5hU11wJRPcSHEuC']", "xpath:attributes"],
+        ["xpath=//div[@id='__layout']/div/div[2]/div/div/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a102b64e-a7d6-4e2a-9815-5dd25b27faf2",
+      "comment": "",
+      "command": "type",
+      "target": "name=email",
+      "targets": [
+        ["id=gyQJyYxfEYqwROGADzB9x", "id"],
+        ["name=email", "name"],
+        ["css=#gyQJyYxfEYqwROGADzB9x", "css:finder"],
+        ["xpath=//input[@id='gyQJyYxfEYqwROGADzB9x']", "xpath:attributes"],
+        ["xpath=//div[@id='__layout']/div/div[2]/div/div/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "1234@gmail.com"
+    }, {
+      "id": "27bcd1c6-c044-4686-b715-72a0fa867b53",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.a-button",
+      "targets": [
+        ["css=.a-button", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='__layout']/div/div[2]/div/div/div/form/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Підписатися')]", "xpath:innerText"]
+      ],
+      "value": "Підписатися"
+    }, {
+      "id": "300870ed-5f1b-424b-b536-30d9ef67a619",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Підписатися')]",
+      "targets": [
+        ["css=.a-button", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='__layout']/div/div[2]/div/div/div/form/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Підписатися')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "4b76cd42-4193-48d6-b889-a7a7f9149ebb",
+    "name": "Add product to shopping cart",
+    "commands": [{
+      "id": "c38d6e1f-fb72-4491-af6c-cffa1e039a57",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c6d3ab01-6743-4d38-b157-21560ad7f66f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.h-products:nth-child(4) .h-pc:nth-child(1) .h-pc__image",
+      "targets": [
+        ["css=.h-products:nth-child(4) .h-pc:nth-child(1) .h-pc__image", "css:finder"],
+        ["xpath=//img[@alt='Придбати -  Пральна машина Whirlpool WRBSB6228BUA']", "xpath:img"],
+        ["xpath=//div[@id='__layout']/div/div/div/div[3]/div[2]/div/div/a/picture/img", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/a/picture/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bec3a5d9-3d59-46ef-a7bb-307dc4d78da2",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//button[@id='product-buy-button']",
+      "targets": [
+        ["css=.product-discount", "css:finder"],
+        ["xpath=//div[@id='js-p-view']/div[2]/main/div[5]/div", "xpath:idRelative"],
+        ["xpath=//div[5]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fa7bc59b-30ea-476c-986a-b9f0ffa383ec",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[@id='product-buy-button']",
+      "targets": [
+        ["id=product-buy-button", "id"],
+        ["css=#product-buy-button", "css:finder"],
+        ["xpath=//button[@id='product-buy-button']", "xpath:attributes"],
+        ["xpath=//div[@id='js-p-view']/div[2]/main/div[4]/div/button", "xpath:idRelative"],
+        ["xpath=//main/div[4]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d0887ed8-cd28-40ea-b333-d14e6072cb57",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//button[contains(.,'Продовжити вибір товарів')]",
+      "targets": [
+        ["css=.comeback", "css:finder"],
+        ["xpath=//footer/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Продовжити вибір товарів')]", "xpath:innerText"]
+      ],
+      "value": "Продовжити вибір товарів"
+    }]
+  }, {
+    "id": "6d1a4ae5-7304-49a2-a74f-6a4a7ecf6c0f",
+    "name": "Delete product from shopping cart",
+    "commands": [{
+      "id": "cef2998f-bca7-4a14-bdd6-6c9f44d7ed5c",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "03e5d0a3-5ad9-4b5d-aee7-a70993e2f236",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.mh-button > .vi__cart > use",
+      "targets": [
+        ["css=.mh-button > .vi__cart > use", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "78a97b59-df5d-4b15-8f91-ef38be475dd0",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.mh-cart__button",
+      "targets": [
+        ["css=.mh-cart__button", "css:finder"],
+        ["xpath=//div[@id='__layout']/div/header/div/div[2]/div[4]/div[2]/section/footer/button", "xpath:idRelative"],
+        ["xpath=//footer/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Перейти до кошика')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "58a4d4a9-012b-48e1-8880-22b8a2113663",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//button[contains(.,'Перейти до кошика')]",
+      "targets": [],
+      "value": "Перейти до кошика"
+    }, {
+      "id": "39462aad-01af-4824-8e1f-e371cff26eff",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Перейти до кошика')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "746f7254-3847-4441-997f-884336a709df",
+      "comment": "",
+      "command": "click",
+      "target": "css=.remove",
+      "targets": [
+        ["css=.remove", "css:finder"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "7680b84e-200e-4b2d-9147-d90fc207f9a8",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["c57bd3b0-9182-49e5-9004-bb184e3fa9af"]
+  }],
+  "urls": ["https://allo.ua/"],
+  "plugins": []
+}
